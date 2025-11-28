@@ -1,0 +1,64 @@
+# ============================================================================
+# GITIGNORE - Agente RAG NetProject
+# ============================================================================
+# Este arquivo previne que dados sensíveis sejam commitados no Git
+
+# CRÍTICO - SECRETS E CREDENCIAIS
+.streamlit/secrets.toml
+secrets.toml
+*.toml
+config.ini
+credentials.json
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+
+# ============================================================================
+# IMPORTANTE:
+# ============================================================================
+# SEMPRE adicione secrets.toml ao .gitignore ANTES de commitar!
+# Nunca exponha credenciais do banco de dados!
+# Use Streamlit Cloud Secrets para produção.
+# ============================================================================
